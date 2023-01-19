@@ -1,4 +1,7 @@
-node_modules
-package-lock.json
-.vscode
+#Dependencies
+/node_modules
+
+
+#misc
 .DS_Store
+package-lock.json
