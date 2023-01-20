@@ -1,7 +1,21 @@
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>README Generator</title>
+  </head>
+  <body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+  </html>`;
+
 
 
 const inquirer = require('inquirer');
 const { writeFile } = require('fs').promises;
+
 
 const askUser = () => {
   return inquirer.prompt ([
@@ -94,11 +108,13 @@ const askUser = () => {
 const generateReadMe = ({ title, license, description, installation, usage, contributing, credit, reference, test, demo, url, email, username, profile,  }) =>
 
 `# Title
+
 ${title}
 
 ## License
 
-<span class="badge text-bg-primary">${license}</span>
+<span class="badge badge-primary">${license}</span>
+
 
 ## Description
 
@@ -115,7 +131,6 @@ ${title}
 - [Test instructions](#test-instructions)
 - [links for project](#links-for-project)
 - [Questions](#questions)
-
 
 ## Installation
 
@@ -155,21 +170,10 @@ ${title}
 
 - If you have additional questions, I can be reached by email at: ${email}.
 - Github username: ${username}
-- Github Profile link: ${profile}
+- Github Profile link: ${profile}`
 
 
-<!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>README Generator</title>
-  </head>
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
-</html>`;
+
 
 const init = () => {
   askUser()
