@@ -4,8 +4,7 @@ README Generator
 
 ## License
 
-<span class="badge badge-primary">MIT License</span>
-
+MIT License
 
 ## Description
 
@@ -18,27 +17,27 @@ README Generator
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [credits](#credits)
+- [Credits](#credits)
 - [Test instructions](#test-instructions)
-- [links for project](#links-for-project)
+- [Link to project](#link-to-project)
 - [Questions](#questions)
 
 ## Installation
 
-- Please instal Node.jsv16 and npm Inquirer 8.2.4
+- Please install Node.jsv16 and npm Inquirer 8.2.4
 
 ## Usage
 
-- To use the generator, run the index.js file by right clicking on the file and running it in the node terminal. When the generator runs it will ask you questions that it will enter into the README file that is generated. This is a screenshot of the generator running in the terminal.c:\Users\adios\Desktop\README-Generator\assets\Screenshot_1.pngc:\Users\adios\Desktop\README-Generator\assets\Screenshot_2.png Here is a screenshot of the Preview in VS code. c:\Users\adios\Desktop\README-Generator\assets\Screenshot_3.pngc:\Users\adios\Desktop\README-Generator\assets\Screenshot_4.png
+- To use the generator, run the index.js file by right clicking on the file and running it in the node terminal. When the generator runs it will ask you questions that it will enter into the README file that is generated. Below are screenshots of the generator running in the terminal and a preview of the newly created README file.c:\Users\adios\Desktop\README-Generator\assets\Screenshot_1.pngc:\Users\adios\Desktop\README-Generator\assets\Screenshot_2.pngc:\Users\adios\Desktop\README-Generator\assets\Screenshot_4.png
 
 ## Demo
 
-- This is the demo video. https://drive.google.com/file/d/1XYuKFc4QcmymH_dyR7DpxAKV66h2FHHL/view
+- https://drive.google.com/file/d/1XYuKFc4QcmymH_dyR7DpxAKV66h2FHHL/view
 
 
 ## contributing
 
-- No contributions.
+- NO contributions
 
 ## credits
 

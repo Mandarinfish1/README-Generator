@@ -1,20 +1,8 @@
-`<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <title>README Generator</title>
-  </head>
-  <body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
-  </html>`;
-
-
 
 const inquirer = require('inquirer');
 const { writeFile } = require('fs').promises;
+
+const createBadge = require('./createBadge.js');
 
 
 const askUser = () => {
@@ -26,16 +14,13 @@ const askUser = () => {
   },
   { 
   type: 'list',
-  name: 'license',
+  name: 'badge',
   message: 'What license does your project have?',
   choices:  
     ['GNU General Public License v3.0',
     'MIT License',
     'BSD 2-Claus Simplified License',
     'BSD 3-Claus New or Revised License',
-    'Boost Software License 1.0',
-    'Creative-Commons Zero v1.0 Universal',
-    'Eclipse Public License 2.0',
     'GNU Affero General Public License v3.0',
     'GNU General Public License v2.0',
     'GNU Lesser General Public License v2.1',
@@ -105,7 +90,9 @@ const askUser = () => {
  ]);
 };
  
-const generateReadMe = ({ title, license, description, installation, usage, contributing, credit, reference, test, demo, url, email, username, profile,  }) =>
+const generateReadMe = ({ title, badge, description, installation, usage, contributing, credit, reference, test, demo, url, email, username, profile,  }) =>
+
+
 
 `# Title
 
@@ -113,8 +100,7 @@ ${title}
 
 ## License
 
-<span class="badge badge-primary">${license}</span>
-
+${badge}
 
 ## Description
 
@@ -127,9 +113,9 @@ ${title}
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [credits](#credits)
+- [Credits](#credits)
 - [Test instructions](#test-instructions)
-- [links for project](#links-for-project)
+- [Link to project](#link-to-project)
 - [Questions](#questions)
 
 ## Installation
@@ -174,7 +160,6 @@ ${title}
 
 
 
-
 const init = () => {
   askUser()
     .then((answers) => writeFile('README.md', generateReadMe(answers)))
@@ -183,5 +168,6 @@ const init = () => {
 };
 
 init();
+
 
 
