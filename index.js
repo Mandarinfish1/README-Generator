@@ -16,8 +16,8 @@ const askUser = () => {
   name: 'badge',
   message: 'What license does your project have?',
   choices: 
-["GNU : (https://img.shields.io/badge/License-GNU-brightgreen.svg)](https://opensource.org/licenses/GPL-3.0)",
-"MIT : (https://img.shields.io/ badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)"],
+['![GNU](https://img.shields.io/badge/License-GNU-brightgreen.svg)](https://opensource.org/licenses/GPL-3.0)',
+'![MIT](https://img.shields.io/ badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)'],
 //"['GNU General Public License v3.0',
     //'BSD 2-Claus Simplified License',
     //'BSD 3-Claus New or Revised License',
