@@ -1,16 +1,17 @@
 # Title
 
-README Generator
+dfg
 
 ## License
 
-MIT License
+MIT : (https://img.shields.io/ badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-- To build a generator that creates a README file based on input the user enters when prompted by the generator.
+- dfgn
 
 ## Table of Contents
+
 - [Title](#title)
 - [License](#license)
 - [Description](#description)
@@ -24,40 +25,38 @@ MIT License
 
 ## Installation
 
-- Please install Node.jsv16 and npm Inquirer 8.2.4
+- dghn
 
 ## Usage
 
-- To use the generator, run the index.js file by right clicking on the file and running it in the node terminal. When the generator runs it will ask you questions that it will enter into the README file that is generated. Below are screenshots of the generator running in the terminal and a preview of the newly created README file.c:\Users\adios\Desktop\README-Generator\assets\Screenshot_1.pngc:\Users\adios\Desktop\README-Generator\assets\Screenshot_2.pngc:\Users\adios\Desktop\README-Generator\assets\Screenshot_4.png
+- ghnm
 
 ## Demo
 
-- https://drive.google.com/file/d/1XYuKFc4QcmymH_dyR7DpxAKV66h2FHHL/view
-
+- ghm
 
 ## contributing
 
-- NO contributions
+- dgn
 
 ## credits
 
-- No
+- ghn
 
 ## Reference
 
--https://github.com/tiffany-brand/professional-README-generator
-
+-dgn
 
 ## Test instructions
 
-- In order to test the generator, run the index.js file in the node terminal. If there are any issues you will get an error indicator in the terminal.
+- ghn
 
 ## Link to project
 
-- https://github.com/Mandarinfish1/README-Generator
+- fgb
 
-#  Questions
+# Questions
 
-- If you have additional questions, I can be reached by email at: ruizpeggys@yahoo.com.
-- Github username: Mandarinfish1
-- Github Profile link: https://github.com/Mandarinfish1
+- If you have additional questions, I can be reached by email at: dfgn.
+- Github username: dghn
+- Github Profile link: dfgn

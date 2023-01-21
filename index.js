@@ -2,8 +2,7 @@
 const inquirer = require('inquirer');
 const { writeFile } = require('fs').promises;
 
-const createBadge = require('./createBadge.js');
-
+//const badge = require('./createBadge');
 
 const askUser = () => {
   return inquirer.prompt ([
@@ -16,16 +15,17 @@ const askUser = () => {
   type: 'list',
   name: 'badge',
   message: 'What license does your project have?',
-  choices:  
-    ['GNU General Public License v3.0',
-    'MIT License',
-    'BSD 2-Claus Simplified License',
-    'BSD 3-Claus New or Revised License',
-    'GNU Affero General Public License v3.0',
-    'GNU General Public License v2.0',
-    'GNU Lesser General Public License v2.1',
-    'Mozilla Public License 2.0',
-    'The Unlicense'],
+  choices: 
+["GNU : (https://img.shields.io/badge/License-GNU-brightgreen.svg)](https://opensource.org/licenses/GPL-3.0)",
+"MIT : (https://img.shields.io/ badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)"],
+//"['GNU General Public License v3.0',
+    //'BSD 2-Claus Simplified License',
+    //'BSD 3-Claus New or Revised License',
+    //'GNU Affero General Public License v3.0',
+    //'GNU General Public License v2.0',
+    //'GNU Lesser General Public License v2.1',
+    //'Mozilla Public License 2.0',
+   // 'The Unlicense'],
 },
   {
     type: 'input',
@@ -90,8 +90,9 @@ const askUser = () => {
  ]);
 };
  
-const generateReadMe = ({ title, badge, description, installation, usage, contributing, credit, reference, test, demo, url, email, username, profile,  }) =>
 
+
+const generateReadMe = ({ title, badge, description, installation, usage, contributing, credit, reference, test, demo, url, email, username, profile,  }) =>
 
 
 `# Title
@@ -159,13 +160,12 @@ ${badge}
 - Github Profile link: ${profile}`
 
 
-
 const init = () => {
   askUser()
     .then((answers) => writeFile('README.md', generateReadMe(answers)))
     .then(() => console.log('README.md file has been created!'))
     .catch((err) => console.error(err));
-};
+}
 
 init();
 
