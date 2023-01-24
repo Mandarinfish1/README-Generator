@@ -40,7 +40,7 @@ README Generator
 - ![Screenshot-1](https://user-images.githubusercontent.com/66844643/214399273-76b3b79e-d5ed-48c8-b1c6-1238d1c14c3e.png)
 - ![Screenshot-2](https://user-images.githubusercontent.com/66844643/214399297-a60197b2-d673-4646-a17e-3a8410045e57.png)
 - ![Screenshot-3](https://user-images.githubusercontent.com/66844643/214403526-d356514c-4759-4f1f-896d-273ccd6f46b2.png)
-- https://drive.google.com/file/d/1l0tjbCQBqWwKQ-buKpu6GffSrtrnGtXk/view
+- Video Demo: https://drive.google.com/file/d/1l0tjbCQBqWwKQ-buKpu6GffSrtrnGtXk/view
 
 ## Contributing
 
